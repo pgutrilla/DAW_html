@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FlexBox
+        </title>
+        <meta charset="utf=8"/>
+        <!--link rel="stylesheet" type="text/css" href="cap03_ejemplo03.css"-->
+        <style>
+            .contenedor{
+                width: 100%;
+                border: solid 4px #3F51B5;
+                margin-top: 15px;
+                display: flex;
+            }
+
+            .contenedor > div{
+                color: white;
+                background-color: #FF4081;
+                text-align: center;
+                font-size: 3rem;
+                margin: 4px;
+                width: 50px;
+            }
+
+            #cont01{
+                flex-direction: row;
+            }
+
+            #cont02{
+                flex-direction: row-reverse;
+            }
+
+            #cont03{
+                flex-direction: column;
+            }
+
+            #cont04{
+                flex-direction: column-reverse;
+            }
+
+            #cont05{
+                flex-wrap: nowrap;
+            }
+
+            #cont06{
+                flex-wrap: wrap;
+            }
+
+            #cont07{
+                flex-wrap: wrap-reverse;
+            }
+
+            #cont08{
+                justify-content: flex-start;
+            }
+
+            #cont09{
+                justify-content: flex-end;
+            }
+
+            #cont10{
+                justify-content: center;
+            }
+
+            #cont11{
+                justify-content: space-between;
+            }
+
+            #cont12{
+                justify-content: space-around;
+            }
+
+            #cont13{
+                align-items: stretch;
+            }
+
+            #cont14{
+                align-items: flex-start;
+            }
+
+            #cont15{
+                align-items: flex-end;
+            }
+
+            #cont16{
+                justify-content: center;
+            }
+
+            .contendeor-alto{
+                height: 100px;
+            }
+
+            #item1{
+                order: 3;
+            }
+
+            #item2{
+                order: 2;
+            }
+
+            #item3{
+                order: 1;
+                flex-grow: 2;
+            }
+
+            #item4{
+                order: 5;
+            }
+
+            #item5{
+                order: 4;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="cont01" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont02" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont03" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont04" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont05" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+        </div>
+
+        <div id="cont06" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+        </div>
+
+        <div id="cont07" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+        </div>
+
+        <div id="cont08" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont09" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont10" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont11" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont12" class="contenedor">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont13" class="contenedor contendeor-alto">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont14" class="contenedor contendeor-alto">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont15" class="contenedor contendeor-alto">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div id="cont16" class="contenedor contendeor-alto">
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+        </div>
+
+        <div class="contenedor">
+            <div id="item1">1</div>
+            <div id="item2">2</div>
+            <div id="item3">3</div>
+            <div id="item4">4</div>
+            <div id="item5">5</div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo</title>
+        <style type="text/css">
+            body{color: blue;}
+        </style>
+    </head>
+
+    <body>
+        <h3>Fecha y hora</h3>
+        <p class="hora">asdasd </p>
+
+        <script type="text/javascript">
+             //document.write(new Date());            
+            while(true){
+                var date = new Date();
+                document.getElementsByClassName("hora")[0].innerHTML = date;
+            }
+            
+        </script>
+
+    </body>
+</html>

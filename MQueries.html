@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FlexBox
+        </title>
+        <meta charset="utf=8"/>
+        <!--link rel="stylesheet" type="text/css" href="cap03_ejemplo03.css"-->
+        <style>
+
+            @media (min-width: 640px) {
+                .content-wrapper{
+                display: flex;
+                flex-direction: row;
+                }
+            }
+
+            @media (max-width: 640px) {
+                .content-wrapper{
+                display: flex ;
+                flex-direction: column;
+                }
+
+                nav, section, aside {
+                    width: 100% !important;
+                    height: 20rem !important;
+                }
+
+            }
+
+            header{
+                background-color: teal;
+                height: 4rem;
+            }
+
+            section{
+                background-color: gray;
+                height: 40rem;
+                width: 10%;
+            }
+
+            aside{
+                background-color: lightgoldenrodyellow;
+                height: 40rem;
+                width: 80%;
+            }
+
+            nav{
+                background-color: lightsalmon;
+                height: 40rem;
+                width: 10%;
+            }
+
+            footer{
+                background-color: mediumspringgreen;
+                height: 2rem;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            Esto es la cabecera
+        </header>
+
+        <div class="content-wrapper">
+            <section>
+                section
+            </section>
+
+            <aside>
+                aside
+            </aside>
+
+            <nav>
+                nav
+            </nav>
+        </div>
+
+        <footer>
+            footer
+        </footer>
+
+    </body>
+
+</html>
