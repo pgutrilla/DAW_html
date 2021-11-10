@@ -47,8 +47,28 @@
     width: 1200px;
 }
 
+.three-width{
+    width: 290px;
+}
+
+.four-width{
+    width: 390px;
+}
+
+.five-width{
+    width: 490px;
+}
+
 .half-width{
     width: 590px;
+}
+
+.seven-width{
+    width: 690px;
+}
+
+.nine-width{
+    width: 890px;
 }
 
 body{
@@ -60,3 +80,24 @@ body{
     
 }
 
+.seleccionar-idioma{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ul-lenguajes{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-post-it{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside-should-ul{
+    padding-left: 1.6rem;
+    list-style: url("../img/check.png");
+}
