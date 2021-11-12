@@ -35,6 +35,14 @@
     float: left;
 }
 
+.m-top-10{
+    margin-top: 10px;
+}
+
+.m-top-30{
+    margin-top: 30px;
+}
+
 .m-right-10{
     margin-right: 10px;
 }
@@ -76,13 +84,77 @@ body{
     margin: auto;
 }
 
-.cabecera{
-    
+a {
+    color: black;
+    text-decoration: none;
 }
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/*------------- CABECERA ---------------*/
+
+.cabecera{
+    height: 7rem;
+}
+
+.menu-principal{
+    height: 7rem;
+}
+
+
+.menu-principal-login{
+    float: right;
+    padding: 1rem 0rem;
+}
+
+.option-login{
+    margin-left: 2rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.menu-principal-options{
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.option-principal{
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    background-color: #f2f2f2;
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.5rem;
+}
+
+.subtitulo-principal{
+    font-size: 2rem;
+    color: #187c9c;
+}
+
+
+.option-secundaria{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #f2f2f2;
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    padding-bottom: 0.6rem;
+}
+
 
 .seleccionar-idioma{
     display: flex;
     justify-content: flex-end;
+    font-size: 0.8rem;
 }
 
 .ul-lenguajes{
@@ -90,7 +162,80 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
+    border: 1px gray solid;
+    border-radius: 1rem;
+    overflow: hidden;
+    
 }
+
+.ul-lenguajes > li{
+    background-color: #f2f2f2;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.ul-lenguajes > li:hover{
+    box-shadow: inset 0 0 4px black; 
+    cursor: pointer;   
+}
+
+
+
+/*------------- CABECERA ---------------*/
+
+
+/*------------- ASIDE ---------------*/
+
+.aside-register {
+    padding: 1rem;
+    background-color: #99d0ef;
+    border-radius: 0.4rem;
+}
+
+.aside-register-button{
+    background-color: #8dce68;
+    padding: 1rem 2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+
+    box-shadow: 2px 2px 2px #7777,-1px -1px 0px #FFFF;
+}
+
+.aside-register-text{
+    font-size: 0.7rem;
+    padding: 0rem 0.2rem;
+    text-align: center;
+}
+
+/*------------- ASIDE ---------------*/
+
+
+
+/*------------- SECTION ---------------*/
+
+.article-program > h1{
+
+    color: #36bac6;
+
+}
+
+.article-program-img{
+    display: block;
+    float: right;
+}
+
+
+.article-about > h3{
+    background-color: #2b8b76;
+}
+
+/*------------- SECTION ---------------*/
+
+
 
 .section-post-it{
     display: flex;
