@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="es"> <!--Lenguaje en español-->
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/drumbeat.css">
-        <title> Drumbeat </title>
+        <meta charset="UTF-8"> <!--Tipo de carácter utf-8-->
+        <link rel="stylesheet" href="../css/drumbeat.css"> <!--Link a la hoja de estilos-->
+        <title> Drumbeat </title> <!--Titulo-->
     </head>
 
     <body>
+
+        <!--Logotipo y el menú de navegación-->
+
+            <!--La imagen se ha metido dentro de este div para asignar asi su altura-->
         <header class="cabecera half-width float-left m-top-30">
             <img src="../img/drumbeat_logo.png" alt="drumbeat-logo">
         </header>
 
+            <!--Contiene el menú de login/sign up y el principal-->
         <nav class="menu-principal half-width float-right m-right-10 m-top-30">
 
             <div class="menu-principal-login display-flex">
@@ -28,10 +33,15 @@
 
         </nav>
         
+
+        <!--Contiene el título,  subtitulo y el menú secundario, y el menú de idiomas --> 
+
+            <!--Subtitulo -->
         <div class="subtitulo-principal pt-sans full-width m-top-10 float-left">
             Drumbeat Learning, Freedom and the Web Festival
         </div>
 
+            <!--Menu navegación con medias-lunas y :hover -->
         <div class="navegacion-secundaria m-right-10 m-top-30 seven-width float-left">
             <div class="navegacion-secundaria-options display-flex">
                 <div class="option-secundaria"><img src="../img/tabs-arrow2.png" alt="menu-arrow"><a href="https://foundation.mozilla.org/es/">Festival</a></div>
@@ -42,11 +52,13 @@
                 <div class="option-secundaria"><img src="../img/tabs-arrow2.png" alt="menu-arrow"><a href="https://foundation.mozilla.org/es/">Get Involved</a></div>
                 <div class="option-secundaria"><img src="../img/tabs-arrow2.png" alt="menu-arrow"><a href="https://foundation.mozilla.org/es/">Wiki</a></div>
             </div>
-
+            
+            <!--Linea inferior del menu -->
             <div class="navegacion-secundaria-line full-width"></div>
 
         </div>
 
+            <!-- Menu de idiomas con :hover -->
         <div class="seleccionar-idioma m-top-30 five-width pt-sans float-right">
                 language:
                 <ul class="ul-lenguajes">
@@ -56,13 +68,18 @@
                 </ul>
         </div>
 
+
+        <!-- Section con parrafos he imamagen -->        
         <article class="article-program nine-width float-left m-right-10 m-bottom-20">
             <h1>Program</h1>
             <div class="article-program-texto">
+
+                    <!-- Clases para hacer flotar a la derecha a la imagen y situarla -->        
                 <div class="article-program-img">
                     <img src="../img/program.png" alt="program-image">
                 </div>
                 
+                    <!-- Formateo de textos y parrafos -->     
                 <p>
                     <strong>Imagine a folk festival with many different tents</strong> - tentsfor all different sorts of music, 
                     a tent where you learn how to fiddle, and maybe one where you make drums.
@@ -79,6 +96,9 @@
             </div>
         </article>
 
+
+        <!-- Div de registro y bullet-points  -->
+            <!-- Registro -->
         <aside class="aside-register three-width float-right m-top-30"> 
             <div class="aside-register-button" >Register</div>
             <div class="aside-register-text" >
@@ -86,8 +106,11 @@
             </div>
         </aside>
 
+            <!-- Bullet points -->
         <aside class="aside-bullet-list three-width float-right m-top-30"> 
 
+                
+            <!-- Englobo 2 cajas donde incluyo el texto he imagen y asigno su espaciado -->
             <div class="aside-bullet display-flex">
                 <div class="aside-bullet-img">
                     <img src="../img/benefit_p2pu.png" alt="peers"> 
@@ -96,7 +119,8 @@
                     Learn how to organize a <strong>Peer 2 Peer University</strong> course.
                 </div>
             </div>
-            
+
+            <!-- Englobo 2 cajas donde incluyo el texto he imagen y asigno su espaciado -->
             <div class="aside-bullet display-flex">
                 <div class="aside-bullet-img">
                     <img src="../img/benefit_creds.png" alt="bag"> 
@@ -106,6 +130,7 @@
                 </div>
             </div>
 
+            <!-- Englobo 2 cajas donde incluyo el texto he imagen y asigno su espaciado -->
             <div class="aside-bullet display-flex">
                 <div class="aside-bullet-img">
                     <img src="../img/benefit_hackbus.png" alt="bus"> 
@@ -115,6 +140,7 @@
                 </div>
             </div>
 
+            <!-- Englobo 2 cajas donde incluyo el texto he imagen y asigno su espaciado -->
             <div class="aside-bullet display-flex">
                 <div class="aside-bullet-img">
                     <img src="../img/benefit_teaching.png" alt="tree"> 
@@ -124,6 +150,7 @@
                 </div>
             </div>
 
+            <!-- Englobo 2 cajas donde incluyo el texto he imagen y asigno su espaciado -->
             <div class="aside-bullet display-flex">
                 <div class="aside-bullet-img">
                     <img src="../img/benefit_hack.png" alt="brain"> 
@@ -133,6 +160,7 @@
                 </div>
             </div>
 
+            <!-- Englobo 2 cajas donde incluyo el texto he imagen y asigno su espaciado -->
             <div class="aside-bullet display-flex">
                 <div class="aside-bullet-img">
                     <img src="../img/benefit_wikipedia.png" alt="wikipedia">  
@@ -144,6 +172,9 @@
 
         </aside>
 
+        <!-- 2 parrafos explicativos y post-it -->
+
+            <!-- Creo 2 articles donde formateo los textos y ubico los parrafos y titulo -->
         <article class="article-about five-width float-left">
             <h3>What is it about?</h3>
             <p>The open nature of the internet is revolutionizing how we learn. Mozilla's 2010 Drumbeat Festival will gather teachers, learners and technologists from around the world who are at the heart of this revolution. Join us in Barcelona for three days og making, teaching, hacking inventing and shaping the future of education and the web. <a href="https://foundation.mozilla.org/es/">Learn more.</a></p>
@@ -154,93 +185,126 @@
             <p>Want to know exactly what's going to happen?<br> You can see the <a href="https://foundation.mozilla.org/es/">draft schedule</a> here on the <a href="https://foundation.mozilla.org/es/">Festival<br> wiki.</a> We're still evolving the details - but the<br> general themes and style of sessions will give you<br> a feel for what's going to happen. You can also<br> read the <a href="https://foundation.mozilla.org/es/">activities page</a> on the wiki for more de-<br> tailed information.</p>
         </article>
 
+
+        <!-- Seccion de post-it -->
+
+            <!-- Contenedor encargado de situar los post-it mediante un display flex -->
         <section class="section-post-it nine-width float-left">
+
+                <!-- Titulo y texto de introduccion -->
             <div class="section-post-it-introduction nine-width m-bottom-30">
                 <h3>Festival Spaces</h3>
                 <p><strong style="font-size: 1.1rem;">Here's some of the different spaces we're planning for the Drumbeat Festival.</strong>
                 <br>Check back often as hosts will be updating these descriptions over the comming weeks.</p>
             </div>
 
+
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->  
             <div class="post-it-wrapper three-width m-right-10 rotation-1-deg-right">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-pink">
                     <h4>Badge lab</h4>
                     <p>Test, critique and improve badges and tools that recognize informal online learning. Hosted by <a href="https://foundation.mozilla.org/es/">P2PU</a>, <a href="https://foundation.mozilla.org/es/">Mozilla</a> and <a href="https://foundation.mozilla.org/es/">Remix Learning</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width m-right-10 rotation-1-deg-left">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-green">
                     <h4>Webcarft toolshed</h4>
                     <p>Get your hands dirty testing and improving standards-based web developer course. Hosted by <a href="https://foundation.mozilla.org/es/">Mozilla</a>, <a href="https://foundation.mozilla.org/es/">P2PU</a> and <a href="https://foundation.mozilla.org/es/">W3C WASP</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width rotation-1-deg-right">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-yellow">
                     <h4>Peer-learning fishbowl</h4>
                     <p>Provide feedback on<br> peer-to-peer courses under development and chart new courses. Hosted by <a href="https://foundation.mozilla.org/es/">Peer 2 Peer University</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width m-right-10 rotation-1-deg-left">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-blue">
                     <h4>Local learning incubator</h4>
                     <p>Help librarians and community organizers produce new open web learning content. Hosted by <a href="https://foundation.mozilla.org/es/">You Media Chicago</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width m-right-10 rotation-3-deg-left">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-pink">
                     <h4>Open content studio</h4>
                     <p>Hack on open textbooks and help build a global corseware catalog. Hosted by <a href="https://foundation.mozilla.org/es/">Flat World Knowledge</a>, <a href="https://foundation.mozilla.org/es/">OCW Consortium</a>, <a href="https://foundation.mozilla.org/es/">Creative Commons</a> and <a href="https://foundation.mozilla.org/es/">Connexions</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width rotation-1-deg-left">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-green">
                     <h4>Hackerspace playground</h4>
                     <p>Learn how to make teach with processing.js, Arduino, a MakerBot and other cool toys. Hosted by <a href="https://foundation.mozilla.org/es/">Monochrom</a> and <a href="https://foundation.mozilla.org/es/">Arduino.cc</a>.</p>
                 </div>
             </div>
-            
+
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width m-right-10 rotation-1-deg-right">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-yellow">
                     <h4>Wikipedia lounge</h4>
                     <p>Pitch in on projects that fuse Wikipedia into the world of learning and education. Hosted by<a href="https://foundation.mozilla.org/es/"> Wikipedia Foundation</a> and <a href="https://foundation.mozilla.org/es/"> Wikipedia in Catalan</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width m-right-10 rotation-1-deg-left">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-blue">
                     <h4>Open source classroom</h4>
                     <p>Convert open source projects into teaching resource in your classroom. Hosted by: <a href="https://foundation.mozilla.org/es/">Free Knowledge Institute</a> and <a href="https://foundation.mozilla.org/es/">Seneca College</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width rotation-1-deg-right">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-pink">
                     <h4>Video + Learning gallery</h4>
                     <p>Make, translate and share online videos with a bent for learning. Hosted by: <a href="https://foundation.mozilla.org/es/">Open Video Alliance</a>, <a href="https://foundation.mozilla.org/es/">Mozilla</a> and <a href="https://foundation.mozilla.org/es/">Participatory Culture Foundation</a>.</p>
                 </div>
             </div>
 
+            <!-- Englobo el pos-t it con un wrapper para asignarle margen y tamaño -->
             <div class="post-it-wrapper three-width m-right-10 rotation-1-deg-left">
+                <!-- En esta clase de post-it me encargo de darlo colo, rotacion y poner texto y titulo (Tambien hay efectos de sombreado e iluminación) -->
                 <div class="post-it bg-green">
                     <h4>Main stage</h4>
                     <p>Demos and report-backs from across the Drumbeat Festival as well as small number of mind-bending keynotes. Hosted by <a href="https://foundation.mozilla.org/es/">Mozilla</a>.</p>
                 </div>
             </div>
 
+            <!-- Texto explicativo final -->
             <div class="section-post-it-introduction nine-width">
                 <p>You'll find a full list of activities confirmed and proposed for Drumbeat Festival spaces on the <br> <a href="https://foundation.mozilla.org/es/">activities wiki page</a>.</p>
             </div>
 
         </section>
 
+        
+        <!-- Aside shoould y RSS -->
+
         <aside class="aside-should three-width float-right m-top-30 rotation-2-deg-left">
             
+            <!-- Titulo rojo -->
             <h1>Who should come?</h1>
             
+            <!-- Lista -->
             <ul class="aside-should-ul">
                 <li><img class="m-right-5" src="../img/check.png" alt="check"> Open textbox authors and remixers</li>
                 <li><img class="m-right-5" src="../img/check.png" alt="check">People teaching web development</li>
@@ -253,6 +317,7 @@
                 <li class="should-strong"><img class="m-right-5 " src="../img/check.png" alt="check"><strong class="pt-sans ">And of course, teachers and learners of all stripes</strong></li>
             </ul>
 
+            <!-- Texto -->
             <p>
                 We're extending a <strong>special invite and reduced fees to people attending <a href="https://foundation.mozilla.org/es/">OpenEd2010</a></strong> which takes place 
                 in Barecelona on the two days before the Drumbeat Festival. We'll announce details in the coming weeks.
@@ -260,6 +325,7 @@
 
         </aside>
 
+        <!-- Botones de redes sociales -->
         <aside class="aside-rss three-width m-top-30 float-right">
             <div class="rss-label bg-identica display-flex">
                 <div class="rss-label-img">
@@ -279,12 +345,19 @@
             </div>
         </aside>        
 
+
+        <!-- Footer -->
         <footer class="full-width float-left">
+            
+            <!-- Titulo -->
             <h1 class="m-bottom-30">In Partnership With</h1>
 
+            <!-- Wrapper de las listas con fondo gris -->
             <div class="footer-info-wrapper full-width display-flex">
-
+                
+                <!-- Contenedor con de 1 de las 3 secciones del footer  -->
                 <div class="footer-rss-left m-top-10 m-bottom-30 four-width display-flex">
+                    
                     <ul class="footer-ul">
                         <li><img src="../img/icono/rss.jpg" alt="rss-icono">Drumbeat Blog <br></li>  
                         <li class="footer-margin-rss" >(RSS feed)</li>  
@@ -298,6 +371,7 @@
                     </ul>
                 </div>
 
+                <!-- Contenedor con de 1 de las 3 secciones del footer  -->
                 <div class="footer-rss-right m-top-10 m-bottom-30 four-width display-flex">
                     <ul class="footer-ul">
                         <li>File a bug</li>
@@ -311,6 +385,7 @@
                     </ul>
                 </div>
 
+                <!-- Contenedor con de 1 de las 3 secciones del footer  -->
                 <div class="footer-cc four-width m-top-10 m-bottom-30">
                     <p>Portions of this content are &copy;2010 by individual drumbeat.org contributors. Content available under a<br> <a href="https://foundation.mozilla.org/es/">Creative Commons license</a></p>
                 </div>
