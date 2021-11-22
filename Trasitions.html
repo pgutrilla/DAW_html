@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+        <meta charset="UTF-8">
+        <title>Horario de gimnasio</title>
+        <script type="text/javascript" src="horario.js"></script>
+        <style type="text/css">
+
+            .container{
+                height: 2rem;
+                width: 20rem;
+                background-color: green;
+                margin-top: 1rem;
+            }
+
+            .transicion-rotate{
+                background-color: rgb(140, 190, 46);
+                transition: transform 1s linear;
+            }
+
+            .transicion-rotate:hover {
+                transform: rotate(90deg) perspective(150px) rotateX(120deg);
+            }
+
+            .transicion-camaleon{
+                background-color: aqua;
+                transition: background-color 1s linear, width 2s linear;
+            }
+
+            .transicion-camaleon:hover {
+                background-color: rgb(115, 54, 165);
+                width: 40rem;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container transicion-rotate"></div>
+        <div class="container transicion-rotate"></div>
+        <div class="container transicion-rotate"></div>
+        <div class="container transicion-rotate"></div>
+        <div class="container transicion-rotate"></div>
+
+        <br> <br> <br>
+
+        <div class="container transicion-camaleon"></div>
+        <div class="container transicion-camaleon"></div>
+        <div class="container transicion-camaleon"></div>
+        <div class="container transicion-camaleon"></div>
+        <div class="container transicion-camaleon"></div>
+
+
+    </body>
+</html>

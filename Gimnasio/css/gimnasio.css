@@ -1,0 +1,261 @@
+/* PT Sans */
+/* En esta region incluyo todas las fuentes que voy a utilizar, en este caso PT Sans normal y bold*/
+/* Cabe destacar que Microsoft Sans Serif no la he podido conseguir porque me falta la licencia, en sustitución he usado Arial (Tienen un gran parrecido)*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+/*------------- CLASES GENERICAS --------------*/
+
+    /* Esta clase la utilizo para aplicar PT-Sans en cualquier elemento añadiendola */
+.pt-sans{
+    font-family: 'PT Sans' !important;
+}
+
+    /* Con estas 2 clases hago flotar los elementos en ambos lados, se ha utilizado para estructurar toda la página*/
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+
+    /* Clases para aplicar rotacion a los elementos */
+.rotation-1-deg-right{
+    transform: rotate(-1deg);
+}
+
+.rotation-2-deg-right{
+    transform: rotate(-2deg);
+}
+
+.rotation-3-deg-right{
+    transform: rotate(-3deg);
+}
+
+.rotation-1-deg-left{
+    transform: rotate(1deg);
+}
+
+.rotation-2-deg-left{
+    transform: rotate(2deg);
+}
+
+.rotation-3-deg-left{
+    transform: rotate(3deg);
+}
+
+    /* Clases genericas de margenes para aplicar a los elementos */
+.m-right-5{
+    margin-right: 5px;
+}
+
+.m-top-10{
+    margin-top: 10px;
+}
+
+.m-top-20{
+    margin-top: 20px;
+}
+
+.m-top-30{
+    margin-top: 30px;
+}
+
+.m-bottom-10{
+    margin-bottom: 10px;
+}
+
+.m-bottom-20{
+    margin-bottom: 20px;
+}
+
+.m-bottom-30{
+    margin-bottom: 30px;
+}
+
+.m-right-10{
+    margin-right: 10px;
+}
+
+
+    /* Debido a los diversos display-flex que he hecho he decidido crear una clase generica */
+.display-flex{
+    display: flex;
+}
+
+    /* Clases con los colores de fondo para los post-it debido a que son comunes entre varios las he separado */
+.bg-pink{
+    background-image: linear-gradient(to top,#ffdad4 95%, #fdfdfd);
+    /*background-color: #ffdad4;*/
+}
+
+.bg-green{
+    background-image: linear-gradient(to top,#deefab 95%, #fdfdfd);
+    /*background-color: #deefab;*/
+}
+
+.bg-yellow{
+    background-image: linear-gradient(to top,#fefcc3 95%, #fdfdfd);
+    /*background-color: #fefcc3;*/
+}
+
+.bg-blue{
+    background-image: linear-gradient(to top,#99dbe7 95%, #fdfdfd);
+    /*background-color: #99dbe7;*/
+}
+
+.bg-identica{
+    background-image: linear-gradient(to top,#7db4c9 95%, #fdfdfd);
+    /*background-color: #7db4c9;*/
+}
+
+.bg-twitter{
+    background-image: linear-gradient(to top,#00bcff 95%, #fdfdfd);
+    /*background-color: #00bcff;*/
+}
+
+
+    /* Sobrescritura de elementos genericos de HTML*/
+body{
+    /* width: 1200px; */
+    margin: 0;
+    margin: auto;
+}
+
+a {
+    /* color: #087680;
+    text-decoration: none; */
+}
+
+a:hover {
+    /* color: #02a4b3;
+    text-decoration: none; */
+}
+
+a:visited {
+    /* color: #087680;
+    text-decoration: none; */
+}
+
+/*------------- CLASES GENERICAS --------------*/
+
+/*------------- HEADER ---------------*/
+
+.nav-principal{
+    background-color: rgba(0,0,0,0.8);
+    padding: 0.5rem;
+    display: flex;
+}
+
+.logo-gym{
+    width: 10%;
+}
+
+.logo-gym > img{
+    /* margin-top: 0.2rem; */
+    /* width: 70%; */
+    width: 110px;
+}
+
+.nav-main-list{
+    display: flex;
+    list-style: none;
+    width: 80%;
+    padding: 0;
+}
+
+.nav-main-list > li{
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    /* font-weight: 900; */
+    text-transform: uppercase;
+    font-family: 'PT Sans';
+}
+
+.nav-unfold-list{
+    display: none;
+}
+
+.login{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-imagen > img{
+    width: 20px;
+}
+
+/*------------- HEADER ---------------*/
+
+/*------------- FOOTER ---------------*/
+
+    /* Clases para el titulo, tanto formato como color*/
+footer > h1 {
+    color: #36bac6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* Defino el color de fondo del footer */
+.footer-info-wrapper{
+    background-color: #7a7772;
+}
+
+
+    /* Estilos para los ul y li asi como el texto del creative comonos, los utilizo para formato de texto y posicionamiento de las imágenes */
+.footer-ul{
+    list-style: none;
+}
+
+.footer-ul > li{
+    margin-bottom: 0.2rem;
+    color: white;
+}
+
+.footer-ul > li > img{
+    margin-right: 1rem;
+}
+
+.footer-margin-rss{
+    margin-left: 2.2rem;
+}
+
+.footer-rss-right > ul{
+    position: relative;
+}
+
+.footer-cc{
+    text-align: right;
+}
+
+.footer-cc > p > a{
+    color: white;
+}
+
+.footer-cc > p > a:visited{
+    color: white;
+}
+
+#mzilla-logo{
+    position: absolute;
+    left: 0.4rem;
+    width: 30px;
+    top: -3px;
+}
+
+/*------------- FOOTER ---------------*/
+
+
+
+
+
+
+
