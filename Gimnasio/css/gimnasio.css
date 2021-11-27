@@ -5,12 +5,20 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'PT Sans', 'Times New Roman', Times, serif;
     box-sizing: border-box;
     color: white;
 }
 
 /*------------- CLASES GENERICAS --------------*/
+
+:root {
+    --dark-blue-main: rgb(51,51,51);
+    --dark-orange-main: rgb(225, 82, 61) ;
+
+    --dark-blue-main-transparente: rgba( 51, 51, 51, 0.5 );
+    --dark-orange-main-transparente: rgba( 225, 82, 61, 0.5 );
+}
 
     /* Esta clase la utilizo para aplicar PT-Sans en cualquier elemento añadiendola */
 .pt-sans{
@@ -128,29 +136,38 @@ body{
     /* width: 1200px; */
     margin: 0;
     margin: auto;
+    background-color: var(--dark-blue-main);
 }
 
 a {
-    /* color: #087680;
-    text-decoration: none; */
+    color: white;
+    text-decoration: none;
 }
 
 a:hover {
-    /* color: #02a4b3;
-    text-decoration: none; */
+    color: white;
+    text-decoration: none;
 }
 
 a:visited {
-    /* color: #087680;
-    text-decoration: none; */
+    color: white;
+    text-decoration: none;
 }
 
 /*------------- CLASES GENERICAS --------------*/
 
 /*------------- HEADER ---------------*/
 
+header{
+    position: fixed;
+    top: 0;
+    height: 5.5rem;
+    width: 100%;
+    z-index: 1;
+}
+
 .nav-principal{
-    background-color: rgba(0,0,0,0.8);
+    background-color: var(--dark-blue-main);
     padding: 0.5rem;
     display: flex;
 }
@@ -160,8 +177,6 @@ a:visited {
 }
 
 .logo-gym > img{
-    /* margin-top: 0.2rem; */
-    /* width: 70%; */
     width: 110px;
 }
 
@@ -175,38 +190,130 @@ a:visited {
 .nav-main-list > li{
     margin-left: 1.5rem;
     font-size: 1.5rem;
-    /* font-weight: 900; */
     text-transform: uppercase;
     font-family: 'PT Sans';
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    
+}
+
+.nav-main-list > li:hover{
+    background-color: var(--dark-orange-main-transparente);
+}
+
+.nav-main-list > li:hover .nav-unfold-list{
+    display: block;
+    background-color: var(--dark-orange-main);
 }
 
 .nav-unfold-list{
     display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.nav-unfold-list > li{
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: var(--dark-blue-main-transparente);
+}
+
+.nav-unfold-list > li:hover{
+    background-color: var(--dark-orange-main-transparente);
 }
 
 .login{
     width: 20%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.login-imagen {
+    margin-top: 0.4rem;
 }
 
 .login-imagen > img{
     width: 20px;
 }
 
+.login-button{
+    background-color: var(--dark-orange-main);
+    padding: 0.5rem;
+}
+
 /*------------- HEADER ---------------*/
+
+/*------------- SECTION ---------------*/
+
+.home-gym-banner{
+    background-color: var(--dark-blue-main);
+    padding: 1.5rem 0rem;
+    margin-top: 6rem;
+    overflow: hidden;
+}
+
+.home-gym-banner-wrapper-img{
+    transform: rotate(-2deg);
+    height: 22rem;
+    overflow: hidden;
+    width: 120%;
+    margin-left: -2rem;
+}
+
+.home-gym-banner-img{
+    background-image: url(../img/gym-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 150%;
+    transform: rotate(2deg);
+    margin-top: -4rem;
+}
+
+.article-introduccion {
+    padding: 0rem 1.5rem;
+    text-align: center;
+}
+
+.article-introduccion > h1{
+    color: var(--dark-orange-main);
+    font-size: 2.4rem;
+}
+
+.article-introduccion > p{
+    font-size: 1.2rem;
+}
+
+.inscribe-section{
+    text-align: center;
+    padding: 0rem 1.5rem;
+}
+
+.inscribe-section > h1{
+    color: var(--dark-orange-main);
+    font-size: 2.4rem;
+}
+
+.subscription-wrapper{
+
+}
+
+.subscription-card{
+
+}
+
+
+/*------------- SECTION ---------------*/
 
 /*------------- FOOTER ---------------*/
 
-    /* Clases para el titulo, tanto formato como color*/
-footer > h1 {
-    color: #36bac6;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-    /* Defino el color de fondo del footer */
+/* Defino el color de fondo del footer */
 .footer-info-wrapper{
-    background-color: #7a7772;
+    background-color: var(--dark-orange-main);
 }
 
 
