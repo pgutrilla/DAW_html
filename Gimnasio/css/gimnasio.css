@@ -13,6 +13,10 @@
 /*------------- CLASES GENERICAS --------------*/
 
 :root {
+
+    --black-color: rgb( 0, 0, 0);
+    --white-color: rgb( 220, 220, 220);
+
     --dark-blue-main: rgb(51,51,51);
     --dark-orange-main: rgb(225, 82, 61) ;
 
@@ -139,18 +143,22 @@ body{
     background-color: var(--dark-blue-main);
 }
 
+.black-font-color{
+    color: var(--black-color);
+}
+
 a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 
 a:visited {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -188,6 +196,7 @@ header{
 }
 
 .nav-main-list > li{
+    position: relative;
     margin-left: 1.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -211,6 +220,10 @@ header{
     list-style: none;
     margin: 0;
     padding: 0;
+    left: 0rem;
+    width: 10.3rem;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
     position: absolute;
 }
 
@@ -299,13 +312,41 @@ header{
 }
 
 .subscription-wrapper{
-
+    justify-content: center;
 }
 
 .subscription-card{
-
+    padding: 1rem;
+    background-color: var(--white-color);
+    color: black;
+    width: 20rem;
+    margin: 1rem 4rem;
+    border-radius: 0.5rem;
 }
 
+.subscription-card-title{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'PT Sans';    
+}
+
+.subscription-card-content{
+    padding: 3rem 1rem;
+    font-size: 3rem;
+    color: var(--black-color);
+}
+
+.subscription-card-button{
+    padding: 0.4rem;
+}
+
+.subscription-card-button > button{
+    color: var(--white-color);
+    background-color: var(--dark-orange-main);
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.4rem;
+}
 
 /*------------- SECTION ---------------*/
 
