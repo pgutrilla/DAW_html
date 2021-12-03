@@ -256,12 +256,15 @@ header{
 }
 
 .home-gym-banner-wrapper-img{
+    box-shadow: 1px 1px 1px 12px rgb(0,0,0);
     transform: rotate(-2deg);
+
     height: 22rem;
     overflow: hidden;
     width: 120%;
     margin-left: -2rem;
 }
+
 
 .home-gym-banner-img{
     background-image: url(../img/gym-banner.jpg);
