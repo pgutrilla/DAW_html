@@ -269,7 +269,7 @@ header{
 }
 
 .home-gym-banner-wrapper-img{
-    box-shadow: 1px 1px 1px 12px rgb(0,0,0);
+    box-shadow: 10px 0px 10px 1px rgb(0,0,0);
     transform: rotate(-2deg);
 
     height: 22rem;
@@ -325,6 +325,7 @@ header{
     width: 20rem;
     margin: 1rem 4rem;
     border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px 0px rgb(0,0,0);
 }
 
 .subscription-card-title{
@@ -349,6 +350,59 @@ header{
     border: none;
     padding: 0.5rem 0.8rem;
     border-radius: 0.4rem;
+}
+
+
+.galery-section{
+    text-align: center;
+    padding: 0rem 1.5rem;
+}
+
+.galery-section > h1{
+    color: var(--dark-orange-main);
+    font-size: 2.4rem;
+}
+
+.galery-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.galery-image-overlay{
+    background-color: rgba( 0, 0, 0, 0.5 );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 8rem;
+    display: none;
+}
+.galery-image:hover > .galery-image-overlay{
+    display: block;
+}
+.galery-image-overlay-texto{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.galery-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem 6rem;
+}
+
+.galery-image{
+    padding: 0.5rem;
+    height: 20rem;
+    width: 33%;
+}
+
+
+.galery-image-background{
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/galeria/galeria1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*------------- SECTION ---------------*/
