@@ -42,6 +42,12 @@ label {
     float: left;
 }
 
+th,td,tr{
+    border-bottom: 1px solid var(--black-color);
+    margin: 0rem;
+    color: var(--black-color);
+    background-color: var(--dark-orange-main-transparente);
+}
 
     /* Clases para aplicar rotacion a los elementos */
 .rotation-1-deg-right{
@@ -185,6 +191,7 @@ a:visited {
 
 /*------------- HEADER ---------------*/
 
+    
 header{
     position: fixed;
     top: 0;
@@ -280,10 +287,12 @@ header{
 
 /*------------- SECTION ---------------*/
 
+/* Esta clase la utilizo para hacer que el aside siempre este presente en la ventana del navegador*/
 .aside-menu{
     position: fixed;
     right: 0;
     top: 30%;
+    height: 22.5rem;
     z-index: 1;
 }
 
@@ -301,14 +310,24 @@ header{
 
 .aside-content{
     background-color: var(--white-color);
-    padding: 2rem;
+    overflow: hidden;
+    width: 0rem;
+    padding: 0.5rem;
     color: var(--black-color);
     border-bottom-left-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
+    /* display: none; */
+    transition: width 0.3s linear;
 }
 
 .aside-content > h2{
     color: var(--dark-orange-main);
+}
+
+.aside-menu:hover > .aside-content{
+    width: 25rem;
+    padding: 2rem;
+    display: block;
 }
 
 .home-gym-banner{
@@ -445,20 +464,110 @@ header{
     padding: 0rem 0.5rem;
     height: 20rem;
     width: 33%;
+    margin-bottom: 1rem;
 }
 
 
 .galery-image-background{
     height: 100%;
     width: 100%;
-    background-image: url('../img/galeria/galeria1.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.javascript-container{
-
+.galery-image1{
+    background-image: url('../img/galeria/galeria1.jpg');
 }
+
+.galery-image2{
+    background-image: url('../img/galeria/galeria2.jpg');
+}
+
+.galery-image3{
+    background-image: url('../img/galeria/galeria3.jpg');
+}
+
+.galery-image4{
+    background-image: url('../img/galeria/galeria4.jpg');
+}
+
+.galery-image5{
+    background-image: url('../img/galeria/galeria5.jpg');
+}
+
+.galery-image6{
+    background-image: url('../img/galeria/galeria6.jpg');
+}
+
+.javascript-container{
+    height: 20rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem 8rem;
+    margin-bottom: 5rem;
+    position: relative;
+    color: var(--black-color);
+    justify-content: center;
+}
+
+.javascript-funcion{
+    color: var(--black-color)!important;
+    display: none;
+    position: absolute;
+    top: 4rem;
+}
+
+.javascript-funcion > ul > li{
+    color: var(--black-color);
+    
+}
+
+.javascript-button{
+    height: fit-content;
+}
+
+.javascript-button:hover + .javascript-funcion{
+    display: flex;
+}
+
+.btn-actividad-icon{
+    border: 3px solid var(--black-color);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: auto;
+    margin: 0rem 2rem;
+}
+
+.btn-actividad-icon > img{
+    height: 20px;
+    width: 20px;
+}
+
+.btn-actividad-text{
+    text-align: center;
+    color: var(--black-color);
+}
+
+
+
+/* #btn-actividad:hover + #container-actividades{
+    display: block;
+}
+
+#btn-fisio:hover + #container-fisios{
+    display: block;
+}
+
+#btn-fmc:hover + #container-fmc{
+    display: block;
+}
+
+#btn-imc:hover + #container-imc{
+    display: block;
+} */
 
 /*------------- SECTION ---------------*/
 
@@ -468,7 +577,6 @@ header{
 .footer-info-wrapper{
     background-color: var(--dark-orange-main);
 }
-
 
     /* Estilos para los ul y li asi como el texto del creative comonos, los utilizo para formato de texto y posicionamiento de las imágenes */
 .footer-ul{

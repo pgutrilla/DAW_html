@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8"> <!--Tipo de carácter utf-8-->
         <link rel="stylesheet" href="../css/gimnasio.css"> <!--Link a la hoja de estilos-->
+        <script type="text/javascript" src="../js/horario.js"></script>
+        <script type="text/javascript" src="../js/fmc.js"></script>
         <title> Gimansio </title> <!--Titulo-->
     </head>
 
@@ -54,7 +56,7 @@
                     </div>
                     <div class="display-flex row">
                         <div class="input-generic">
-                            <label>DNI</label><br>
+                            <label>Contraseña</label><br>
                             <input class="aside-input" type="text" name="DNI"><br>
                         </div>
                     </div>
@@ -148,14 +150,14 @@
             <div class="galery-section">
                 <h1>Galeria de fotos</h1>
                 <div class="galery-wrapper display-flex">
-
+                    
                     <div class="galery-image">
                         <div class="galery-image-overlay">
                             <div class="galery-image-overlay-texto">
                                 Con material de primera calidad
                             </div>
                         </div>
-                        <div class="galery-image-background">
+                        <div class="galery-image-background galery-image1">
                             
                         </div>
                     </div>
@@ -166,7 +168,7 @@
                                 Con material de primera calidad
                             </div>
                         </div>
-                        <div class="galery-image-background">
+                        <div class="galery-image-background galery-image2">
                             
                         </div>
                     </div>
@@ -177,7 +179,7 @@
                                 Con material de primera calidad
                             </div>
                         </div>
-                        <div class="galery-image-background">
+                        <div class="galery-image-background galery-image3">
                             
                         </div>
                     </div>
@@ -188,7 +190,7 @@
                                 Con material de primera calidad
                             </div>
                         </div>
-                        <div class="galery-image-background">
+                        <div class="galery-image-background galery-image4">
                             
                         </div>
                     </div>
@@ -199,7 +201,7 @@
                                 Con material de primera calidad
                             </div>
                         </div>
-                        <div class="galery-image-background">
+                        <div class="galery-image-background galery-image5">
                             
                         </div>
                     </div>
@@ -210,7 +212,7 @@
                                 Con material de primera calidad
                             </div>
                         </div>
-                        <div class="galery-image-background">
+                        <div class="galery-image-background galery-image6">
                             
                         </div>
                     </div>
@@ -218,8 +220,80 @@
                 </div>
             </div>
 
-            <div class="javascript-container">
+            <div class="javascript-container display-flex">
                 
+                <div id="btn-actividad" class="javascript-button">
+                    <div class="btn-actividad-icon">
+                        <img alt="icono actividades" src="../img/iconos/actividades.svg">
+                    </div> 
+                    <div class="btn-actividad-text">
+                        Actividades 
+                    </div>
+                </div>
+                <div id="container-actividades" class="javascript-funcion display-flex">
+                    <table id="tabla-actividades">
+
+                    </table>
+                </div>                
+                
+                <div id="btn-fisio" class="javascript-button">
+                    <div class="btn-actividad-icon">
+                        <img alt="icono actividades" src="../img/iconos/fisios.svg">
+                    </div> 
+                    <div class="btn-actividad-text">
+                        Fisios 
+                    </div>
+                </div>
+                <div id="container-fisios" class="javascript-funcion display-flex">
+                    <table id="tabla-fisios">
+
+                    </table>
+                </div>                
+
+                <div id="btn-fmc" class="javascript-button">
+                    <div class="btn-actividad-icon">
+                        <img alt="icono actividades" src="../img/iconos/fmc.svg">
+                    </div> 
+                    <div class="btn-actividad-text">
+                        FMC
+                    </div>
+                </div>
+                <div id="container-fmc" class="javascript-funcion display-flex">
+                    <ul id="fmc-ul">
+                        <li>Zona de recuperación (60%-70%): </li>
+                        <li>Zona aeróbica (70%-80%): </li>
+                        <li>Zona anaeróbica (80%-90%): </li>
+                        <li>Línea roja (90%-100%): </li>
+                    </ul>
+                </div>           
+
+                <div id="btn-imc" class="javascript-button">
+                    <div class="btn-actividad-icon">
+                        <img alt="icono actividades" src="../img/iconos/imc.svg">
+                    </div> 
+                    <div class="btn-actividad-text">
+                        IMC
+                    </div>
+                </div>
+                <div id="container-imc" class="javascript-funcion display-flex">
+                    <ul id="imc-ul">
+                        <li>16.00: Infrapeso (delgadez severa)</li>
+                        <li>16.00 – 16.99: Infrapeso (delgadez moderada)</li>
+                        <li>17.00 - 18.49: Infrapeso (delgadez aceptable)</li>
+                        <li>18.50 - 24.99: Peso normal</li>
+                        <li>25.00 - 29.99: Sobrepeso</li>
+                        <li>30.00 - 34.99: Obeso (Tipo I)</li>
+                        <li>35.00 - 40.00: Obeso (Tipo II)</li>
+                        <li>40.00: Obeso (Tipo III)</li>
+                    </ul>
+                </div>           
+
+                <!-- <div class="javascript-buttons display-flex"> -->
+                    
+                    
+                    
+                    
+                <!-- </div> -->
             </div>
 
         </section>
