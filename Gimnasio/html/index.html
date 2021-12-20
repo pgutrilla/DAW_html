@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="es"> <!--Lenguaje en español-->
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8"> <!--Tipo de carácter utf-8-->
         <link rel="stylesheet" href="../css/gimnasio.css"> <!--Link a la hoja de estilos-->
+        <link rel="stylesheet" href="../css/responsive.css"> <!--Link a la hoja de estilos-->
+        <link rel="stylesheet" media="print" href="../css/print.css" />
         <script type="text/javascript" src="../js/horario.js"></script>
         <script type="text/javascript" src="../js/fmc.js"></script>
         <title> Gimansio </title> <!--Titulo-->
@@ -14,15 +17,15 @@
             <nav class="nav-principal">
                 <div class="logo-gym"><img src="../img/gym-logo.png" alt="logotipo-gimnasio"></div>
                 <ul class="nav-main-list">
-                    <li><a href="">Home</a></li>
-                    <li><a>Galeria</a></li>
-                    <li>Aplicaciones
+                    <li><a  href="#">Home</a></li>
+                    <li><a  href="#galeria">Galeria</a></li>
+                    <li><a  href="#javascript">Aplicaciones</a>
                         <ul class="nav-unfold-list">
-                            <li><a>Calculadora IMC</a></li>
-                            <li><a>Calculadora FMC</a></li>
+                            <li><a  href="#javascript">Calculadora IMC</a></li>
+                            <li><a  href="#javascript">Calculadora FMC</a></li>
                         </ul>
                     </li>
-                    <li><a>Horarios</a></li>
+                    <li><a  href="#javascript">Horarios</a></li>
                 </ul>
                 <div class="login display-flex">
                     <div class="login-imagen"><img src="../img/user-icon.png" alt="icono-usuario"></div>
@@ -39,189 +42,192 @@
                     </div>
                 </div>
             </div>
+        </section>    
 
-            <aside class="aside-menu display-flex">
-                <div class="aside-button"> < </div>
-                <div class="aside-content generic-shadow">
-                    <h2>Tramitar subscripción</h2>
-                    <div class="display-flex row">
-                        <div class="input-generic">
-                            <label>Nombre</label><br>
-                            <input class="aside-input" type="text" name="nombre"><br>
-                        </div>
-                        <div class="input-generic">
-                            <label>Apellidos</label><br>
-                            <input class="aside-input" type="text" name="apellidos"><br>
-                        </div>
+        <aside class="aside-menu display-flex">
+            <div class="aside-button"> < </div>
+            <div class="aside-content generic-shadow">
+                <h2>Tramitar subscripción</h2>
+                <div class="display-flex row">
+                    <div class="input-generic">
+                        <label>Nombre</label><br>
+                        <input class="aside-input" type="text" name="nombre"><br>
                     </div>
-                    <div class="display-flex row">
-                        <div class="input-generic">
-                            <label>Contraseña</label><br>
-                            <input class="aside-input" type="text" name="DNI"><br>
-                        </div>
+                    <div class="input-generic">
+                        <label>Apellidos</label><br>
+                        <input class="aside-input" type="text" name="apellidos"><br>
                     </div>
-                    <div class="display-flex row">
-                        <div class="input-generic">
-                            <label>Email</label><br>
-                            <input class="aside-input full-width" type="email" name="email"><br>
-                        </div>
+                </div>
+                <div class="display-flex row">
+                    <div class="input-generic">
+                        <label>Contraseña</label><br>
+                        <input class="aside-input" type="text" name="DNI"><br>
                     </div>
-                    <div class="display-flex row">
-                        <div class="input-generic">
-                            <input type="checkbox" name="subscripcion" value=""><label>Standard</label>
-                        </div>
-                        <div class="input-generic">
-                            <input type="checkbox" name="subscripcion" value=""><label>Premium</label>
-                        </div>
-                        <div class="input-generic">
-                            <input type="checkbox" name="subscripcion" value=""><label>VIP</label>
-                        </div>
+                </div>
+                <div class="display-flex row">
+                    <div class="input-generic">
+                        <label>Email</label><br>
+                        <input class="aside-input full-width" type="email" name="email"><br>
                     </div>
+                </div>
+                <div class="display-flex row">
+                    <div class="input-generic">
+                        <input type="checkbox" name="subscripcion" value=""><label>Standard</label>
+                    </div>
+                    <div class="input-generic">
+                        <input type="checkbox" name="subscripcion" value=""><label>Premium</label>
+                    </div>
+                    <div class="input-generic">
+                        <input type="checkbox" name="subscripcion" value=""><label>VIP</label>
+                    </div>
+                </div>
+                <div class="subscription-card-button">
+                    <button>Comienza</button>
+                </div>
+            </div>
+            
+        </aside>
+
+        <article class="article-introduccion">
+            <h1>Comienza en HammerGym</h1>
+            <p>Haz un cambio en tu vida, comienza a entrenar en nuestras instalaciones equipadas con la mas alta gama de material y maquinaria de gimnasio. Con la ayuda de nuestros monitores alcanzaras tus objetivos, creando una serie de ejercicios adecuados para tus necesidades e inculcándote hábitos saludables.</p>
+        </article>
+
+        <div class="inscribe-section">
+            <h1>¡Inscribete ya!</h1>
+            <div class="subscription-wrapper display-flex">
+
+                <div class="subscription-card ">
+                    <div class="subscription-card-title black-font-color">
+                        Standard
+                    </div>
+                    <div class="subscription-card-subtitle black-font-color">
+                        1 mes
+                    </div>
+                    <hr>
+                    <div class="subscription-card-content">
+                        40€
+                    </div>
+                    <hr>
+                    <div class="subscription-card-button">
+                        <button>Comienza</button>
+                    </div>
+                </div>
+
+                <div class="subscription-card ">
+                    <div class="subscription-card-title black-font-color">
+                        Premium
+                    </div>
+                    <div class="subscription-card-subtitle black-font-color">
+                        3 meses
+                    </div>
+                    <hr>
+                    <div class="subscription-card-content">
+                        110€
+                    </div>
+                    <hr>
+                    <div class="subscription-card-button">
+                        <button>Comienza</button>
+                    </div>
+                </div>
+
+                <div class="subscription-card ">
+                    <div class="subscription-card-title black-font-color">
+                        VIP
+                    </div>
+                    <div class="subscription-card-subtitle black-font-color">
+                        9 meses
+                    </div>
+                    <hr>
+                    <div class="subscription-card-content">
+                        300€
+                    </div>
+                    <hr>
                     <div class="subscription-card-button">
                         <button>Comienza</button>
                     </div>
                 </div>
                 
-            </aside>
-
-            <article class="article-introduccion">
-                <h1>Comienza en HammerGym</h1>
-                <p>Haz un cambio en tu vida, comienza a entrenar en nuestras instalaciones equipadas con la mas alta gama de material y maquinaria de gimnasio. Con la ayuda de nuestros monitores alcanzaras tus objetivos, creando una serie de ejercicios adecuados para tus necesidades e inculcándote hábitos saludables.</p>
-            </article>
-
-            <div class="inscribe-section">
-                <h1>¡Inscribete ya!</h1>
-                <div class="subscription-wrapper display-flex">
-
-                    <div class="subscription-card ">
-                        <div class="subscription-card-title black-font-color">
-                            Standard
-                        </div>
-                        <div class="subscription-card-subtitle black-font-color">
-                            1 mes
-                        </div>
-                        <hr>
-                        <div class="subscription-card-content">
-                            40€
-                        </div>
-                        <hr>
-                        <div class="subscription-card-button">
-                            <button>Comienza</button>
-                        </div>
-                    </div>
-
-                    <div class="subscription-card ">
-                        <div class="subscription-card-title black-font-color">
-                            Premium
-                        </div>
-                        <div class="subscription-card-subtitle black-font-color">
-                            3 meses
-                        </div>
-                        <hr>
-                        <div class="subscription-card-content">
-                            110€
-                        </div>
-                        <hr>
-                        <div class="subscription-card-button">
-                            <button>Comienza</button>
-                        </div>
-                    </div>
-
-                    <div class="subscription-card ">
-                        <div class="subscription-card-title black-font-color">
-                            VIP
-                        </div>
-                        <div class="subscription-card-subtitle black-font-color">
-                            9 meses
-                        </div>
-                        <hr>
-                        <div class="subscription-card-content">
-                            300€
-                        </div>
-                        <hr>
-                        <div class="subscription-card-button">
-                            <button>Comienza</button>
-                        </div>
-                    </div>
-                    
-                </div>
             </div>
+        </div>
 
-            <div class="galery-section">
-                <h1>Galeria de fotos</h1>
-                <div class="galery-wrapper display-flex">
-                    
-                    <div class="galery-image">
-                        <div class="galery-image-overlay">
-                            <div class="galery-image-overlay-texto">
-                                Con material de primera calidad
-                            </div>
-                        </div>
-                        <div class="galery-image-background galery-image1">
-                            
-                        </div>
-                    </div>
-
-                    <div class="galery-image ">
-                        <div class="galery-image-overlay">
-                            <div class="galery-image-overlay-texto">
-                                Con material de primera calidad
-                            </div>
-                        </div>
-                        <div class="galery-image-background galery-image2">
-                            
-                        </div>
-                    </div>
-
-                    <div class="galery-image ">
-                        <div class="galery-image-overlay">
-                            <div class="galery-image-overlay-texto">
-                                Con material de primera calidad
-                            </div>
-                        </div>
-                        <div class="galery-image-background galery-image3">
-                            
-                        </div>
-                    </div>
-
-                    <div class="galery-image ">
-                        <div class="galery-image-overlay">
-                            <div class="galery-image-overlay-texto">
-                                Con material de primera calidad
-                            </div>
-                        </div>
-                        <div class="galery-image-background galery-image4">
-                            
-                        </div>
-                    </div>
-
-                    <div class="galery-image ">
-                        <div class="galery-image-overlay">
-                            <div class="galery-image-overlay-texto">
-                                Con material de primera calidad
-                            </div>
-                        </div>
-                        <div class="galery-image-background galery-image5">
-                            
-                        </div>
-                    </div>
-
-                    <div class="galery-image ">
-                        <div class="galery-image-overlay">
-                            <div class="galery-image-overlay-texto">
-                                Con material de primera calidad
-                            </div>
-                        </div>
-                        <div class="galery-image-background galery-image6">
-                            
-                        </div>
-                    </div>
-                                    
-                </div>
-            </div>
-
-            <div class="javascript-container display-flex">
+        <div id="galeria" class="galery-section">
+            <h1>Galeria de fotos</h1>
+            <div class="galery-wrapper display-flex">
                 
+                <div class="galery-image">
+                    <div class="galery-image-overlay">
+                        <div class="galery-image-overlay-texto">
+                            Con material de primera calidad
+                        </div>
+                    </div>
+                    <div class="galery-image-background galery-image1">
+                        
+                    </div>
+                </div>
+
+                <div class="galery-image ">
+                    <div class="galery-image-overlay">
+                        <div class="galery-image-overlay-texto">
+                            Con material de primera calidad
+                        </div>
+                    </div>
+                    <div class="galery-image-background galery-image2">
+                        
+                    </div>
+                </div>
+
+                <div class="galery-image ">
+                    <div class="galery-image-overlay">
+                        <div class="galery-image-overlay-texto">
+                            Con material de primera calidad
+                        </div>
+                    </div>
+                    <div class="galery-image-background galery-image3">
+                        
+                    </div>
+                </div>
+
+                <div class="galery-image ">
+                    <div class="galery-image-overlay">
+                        <div class="galery-image-overlay-texto">
+                            Con material de primera calidad
+                        </div>
+                    </div>
+                    <div class="galery-image-background galery-image4">
+                        
+                    </div>
+                </div>
+
+                <div class="galery-image ">
+                    <div class="galery-image-overlay">
+                        <div class="galery-image-overlay-texto">
+                            Con material de primera calidad
+                        </div>
+                    </div>
+                    <div class="galery-image-background galery-image5">
+                        
+                    </div>
+                </div>
+
+                <div class="galery-image ">
+                    <div class="galery-image-overlay">
+                        <div class="galery-image-overlay-texto">
+                            Con material de primera calidad
+                        </div>
+                    </div>
+                    <div class="galery-image-background galery-image6">
+                        
+                    </div>
+                </div>
+                                
+            </div>
+        </div>
+
+        <section id="javascript" class="section-javascript">
+            <h1>Nuestas aplicaciones</h1>
+            <div class="javascript-container display-flex">
+            
                 <div id="btn-actividad" class="javascript-button">
                     <div class="btn-actividad-icon">
                         <img alt="icono actividades" src="../img/iconos/actividades.svg">
@@ -281,61 +287,28 @@
                         <li>16.00 – 16.99: Infrapeso (delgadez moderada)</li>
                         <li>17.00 - 18.49: Infrapeso (delgadez aceptable)</li>
                         <li>18.50 - 24.99: Peso normal</li>
-                        <li>25.00 - 29.99: Sobrepeso</li>
-                        <li>30.00 - 34.99: Obeso (Tipo I)</li>
-                        <li>35.00 - 40.00: Obeso (Tipo II)</li>
-                        <li>40.00: Obeso (Tipo III)</li>
                     </ul>
                 </div>           
-
-                <!-- <div class="javascript-buttons display-flex"> -->
-                    
-                    
-                    
-                    
-                <!-- </div> -->
             </div>
+        </section>    
 
-        </section>
+        
 
         <!-- Footer -->
         <footer class="">
             <!-- Wrapper de las listas con fondo gris -->
             <div class="footer-info-wrapper full-width display-flex">
                 
-                <!-- Contenedor con de 1 de las 3 secciones del footer  -->
-                <div class="footer-rss-left m-top-10 m-bottom-30 four-width display-flex">
-                    
-                    <ul class="footer-ul">
-                        <li><img src="../img/icono/rss.jpg" alt="rss-icono">Drumbeat Blog <br></li>  
-                        <li class="footer-margin-rss" >(RSS feed)</li>  
-                    </ul>
-
-                    
-                    <ul class="footer-ul">
-                        <li><img src="../img/icono/twitter.jpg" alt="rss-icono">Tiwtter</li>
-                        <li><img src="../img/icono/facebook.jpg" alt="rss-icono">Facebook</li>
-                        <li><img src="../img/icono/flickr.jpg" alt="rss-icono">Flickr</li>
-                    </ul>
+                <div class="footer-icons display-flex full-width m-top-10">
+                    <a  href="#"><img src="../img/iconos/instagram.svg"></a>
+                    <a  href="#"><img src="../img/iconos/linkedin.svg"></a>
+                    <a  href="#"><img src="../img/iconos/youtube.svg"></a>
+                    <a  href="#"><img src="../img/iconos/facebook.svg"></a>
                 </div>
-
+                
                 <!-- Contenedor con de 1 de las 3 secciones del footer  -->
-                <div class="footer-rss-right m-top-10 m-bottom-30 four-width display-flex">
-                    <ul class="footer-ul">
-                        <li>File a bug</li>
-                        <li>Drumbeat wiki</li>
-                        <li>Join the newgroup</li>
-                        <li>Join the weekly call</li>
-                    </ul>
-                    <ul class="footer-ul">
-                        <li><img id="mzilla-logo" src="../img/icono/mozilla.jpg" alt="rss-icono">Mozilla.org</li>
-                        <li>Privacy policy</li>
-                    </ul>
-                </div>
-
-                <!-- Contenedor con de 1 de las 3 secciones del footer  -->
-                <div class="footer-cc four-width m-top-10 m-bottom-30">
-                    <p>Portions of this content are &copy;2010 by individual drumbeat.org contributors. Content available under a<br> <a href="https://foundation.mozilla.org/es/">Creative Commons license</a></p>
+                <div class="footer-author">
+                    <p><strong>COPYRIGHT 2020 &copy; HAMMER GYM S.L</strong></p>
                 </div>
 
             </div>

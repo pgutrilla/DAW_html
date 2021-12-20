@@ -1,0 +1,347 @@
+
+/* Moviles pequeños */
+
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+
+	.subscription-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscription-card-title{
+      margin: 1rem 1rem;  
+    }
+
+    .logo-gym > img{
+        margin-left: -1.5rem;
+    }
+
+    .galery-wrapper{
+        margin: 1rem 0rem;
+    }
+
+    .galery-image{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .galery-image-overlay{
+        padding: 5rem;
+    }
+
+    .logo-gym > img{
+        width: 80px;
+    }
+
+    .nav-main-list > li{
+        font-size: 1.1rem;
+        height: fit-content;    
+    }
+
+    .nav-unfold-list > li{
+        font-size: 0.4rem;
+    }
+
+    .login-button{
+        font-size: 0.2rem;
+    }
+
+
+    .aside-menu{
+        margin: 1rem 0rem;
+    }
+
+    .javascript-container{
+        margin: 1rem 0.4rem;
+    }    
+
+    .btn-actividad-icon {
+        margin: 0rem 1rem;
+    }
+}
+
+/* Moviles medianos */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+	.subscription-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galery-image{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .logo-gym > img{
+        margin-left: -1.5rem;
+    }
+
+    .galery-image-overlay{
+        padding: 5rem;
+    }
+
+    .galery-wrapper{
+        margin: 1rem 0rem;
+    }
+
+    .logo-gym > img{
+        width: 80px;
+    }
+
+    .nav-main-list > li{
+        font-size: 1.1rem;
+        height: fit-content;    
+    }
+
+    .nav-unfold-list > li{
+        font-size: 0.7rem;
+    }
+
+    .login-button{
+        font-size: 0.6rem;
+    }
+
+    .javascript-container{
+        margin: 1rem 0.4rem;
+    }
+
+    .btn-actividad-icon {
+        margin: 0rem 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    .subscription-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+	
+    .galery-image{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .galery-wrapper{
+        margin: 1rem 0rem;
+    }
+
+    .galery-image-overlay{
+        padding: 5rem;
+        width: 100%;
+    }
+
+    .logo-gym > img{
+        width: 80px;
+    }
+
+    .nav-main-list > li{
+        font-size: 1.1rem;
+        height: fit-content;    
+    }
+
+    .nav-unfold-list > li{
+        font-size: 0.7rem;
+    }
+
+    .login-button{
+        font-size: 0.6rem;
+    }
+
+    .javascript-container{
+        margin: 1rem 0.4rem;
+    }
+
+    .btn-actividad-icon {
+        margin: 0rem 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+	.subscription-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galery-image{
+        height: 15rem;
+        width: 50%;
+    }
+
+    .galery-image-overlay-texto {
+        font-size: 0.8rem;
+    }
+
+    .logo-gym > img{
+        width: 80px;
+        margin-left: -0.1rem;
+    }
+
+    .nav-main-list > li{
+        font-size: 1.1rem;
+        height: fit-content;    
+    }
+
+    .nav-unfold-list > li{
+        font-size: 0.7rem;
+    }
+
+    .login-button{
+        font-size: 0.6rem;
+    }
+
+	.galery-image-overlay{
+        padding: 6rem;
+    }
+
+
+	
+}
+
+/* @media (min-width: 992px) {
+
+}*/
+
+@media (max-width: 992px) {
+
+    header{
+        position: static;
+        margin-bottom: 8rem;
+    }
+
+    .logo-gym{
+        margin: auto;
+    }
+
+    .nav-main-list{
+        margin: auto;
+    }
+
+    .aside-menu{
+        display: none;
+    }
+
+    .nav-principal{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-main-list{
+        flex-direction: column;
+    }
+
+    .nav-main-list{
+        text-align: center;
+    }
+    
+    .nav-main-list > li{
+        
+        margin-left: 0;
+    }
+
+    .nav-unfold-list {
+        display: none;
+    }
+
+    .nav-main-list > li:hover .nav-unfold-list{
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+
+} 
+
+@media only screen and (min-width: 992px) and (max-width: 1025px) {
+
+    .subscription-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-gym > img{
+        margin-left: -0.1rem;
+    }
+
+    .galery-image{
+        width: 50%;
+    }
+
+    .galery-image-overlay{
+        padding: 7rem;
+    }
+
+    .login-button{
+        font-size: 0.6rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+	
+    .login-button{
+        font-size: 0.8rem;
+    }
+
+    .subscription-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galery-image{
+        width: 50%;
+    }
+
+	.galery-image-overlay{
+        padding: 7rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1444px) {
+
+    .login-button{
+        font-size: 0.8rem;
+    }
+
+    .subscription-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galery-image{
+        width: 50%;
+    }
+
+	.galery-image-overlay{
+        padding: 9rem;
+    }
+
+}
+
+@media only screen and (min-width: 1444px) and (max-width: 1650px) {
+
+	
+}
+
+@media only screen and (min-width: 1650px) and (max-width: 1700px) {
+
+
+
+}
+
+
+
+
+
+
+
+

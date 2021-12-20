@@ -24,7 +24,7 @@ window.onload = function(){
 
 
     // Inicializo un array con las horas de la segunda tabla y todos los fisioterapeutas
-    var horasSegunda = ['10:00 - 10:45', '10:45 - 11:30', '11:30 - 12:15', '12:15 - 13:00', '13:00 - 13:45', '17:00 - 17:45', '17:45 - 18:30', '18:30 - 19:15', '19:15 - 20:00', '20:00 - 20:45'];
+    var horasSegunda = ['10:00 - 10:45', '10:45 - 11:30', '11:30 - 12:15', '12:15 - 13:00', '13:00 - 13:45', '17:00 - 17:45', '17:45 - 18:30'];
     // var arrTutores = ['Juan Gonzalez', 'Luna Lopez', 'Pablo Sancho', 'Marta Marquez', 'Rosa Rosario', 'Marta Delgado', 'Romina Paredes', 'Alberto Gines', 'Adam Ondra', 'Alex Megos'];
     var arrTutores = ['Juan Gonzalez', 'Luna Lopez', 'Pablo Sancho', 'Marta Marquez', 'Rosa Rosario'];
     

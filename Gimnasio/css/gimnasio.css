@@ -22,7 +22,7 @@ label {
     --white-color: rgb( 220, 220, 220);
 
     --dark-blue-main: rgb(51,51,51);
-    --dark-orange-main: rgb(225, 82, 61) ;
+    --dark-orange-main: rgb(228, 86, 64) ;
 
     --dark-blue-main-transparente: rgba( 51, 51, 51, 0.5 );
     --dark-orange-main-transparente: rgba( 225, 82, 61, 0.5 );
@@ -281,6 +281,7 @@ header{
 .login-button{
     background-color: var(--dark-orange-main);
     padding: 0.5rem;
+    height: fit-content;
 }
 
 /*------------- HEADER ---------------*/
@@ -499,8 +500,15 @@ header{
     background-image: url('../img/galeria/galeria6.jpg');
 }
 
+.section-javascript > h1{
+    color: var(--dark-orange-main);
+    font-size: 2.4rem;
+    text-align: center;
+    
+}
+
 .javascript-container{
-    height: 20rem;
+    height: 24rem;
     background-color: var(--white-color);
     border-radius: 1rem;
     padding: 2rem;
@@ -509,17 +517,24 @@ header{
     position: relative;
     color: var(--black-color);
     justify-content: center;
+    overflow: hidden;
 }
 
 .javascript-funcion{
     color: var(--black-color)!important;
     display: none;
     position: absolute;
-    top: 4rem;
+    top: 8rem;
 }
 
 .javascript-funcion > ul > li{
-    color: var(--black-color);
+    text-decoration: none;
+    list-style: none;
+    margin-left: -2rem;
+    background-color: var(--dark-orange-main);
+    margin-top: 0.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1.1rem;
     
 }
 
@@ -576,47 +591,28 @@ header{
 /* Defino el color de fondo del footer */
 .footer-info-wrapper{
     background-color: var(--dark-orange-main);
+    flex-direction: column;
 }
 
-    /* Estilos para los ul y li asi como el texto del creative comonos, los utilizo para formato de texto y posicionamiento de las imágenes */
-.footer-ul{
-    list-style: none;
+.footer-icons{
+    display: flex;
+    justify-content: center;
 }
-
-.footer-ul > li{
-    margin-bottom: 0.2rem;
-    color: white;
-}
-
-.footer-ul > li > img{
-    margin-right: 1rem;
-}
-
-.footer-margin-rss{
-    margin-left: 2.2rem;
-}
-
-.footer-rss-right > ul{
-    position: relative;
-}
-
-.footer-cc{
-    text-align: right;
-}
-
-.footer-cc > p > a{
-    color: white;
-}
-
-.footer-cc > p > a:visited{
-    color: white;
-}
-
-#mzilla-logo{
-    position: absolute;
-    left: 0.4rem;
+    
+.footer-icons img{
     width: 30px;
-    top: -3px;
+    filter: invert(100%);
+    margin: 0rem 0.5rem;
+    transition: transform .2s;
+}
+
+.footer-icons img:hover{
+    box-shadow: -1px 10px 18px -9px rgba(255,255,255,1);
+    transform: scale(1.2);  
+}
+
+.footer-author > p{
+    text-align: center;
 }
 
 /*------------- FOOTER ---------------*/
