@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script src="software_empleado/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $("#cajaprincipal").on("click", function(e) {
+            var circulo = $("#circulo");
+            
+            circulo.css("left", "60%");
+            circulo.css("position", "absolute");
+            circulo.show();
+            circulo.animate({top:"11rem"},4000);
+
+            var nube1 = $("#div1");
+
+            nube1.css("top", "12rem");
+            nube1.css("position", "absolute");
+            nube1.show();
+            nube1.animate({left:"70%"},4000);
+            
+            
+        });
+    });
+
+</script>
+<title>EjercicioEjemplo</title>
+<style type="text/css">
+body{
+position: relative;
+}
+
+#cajaprincipal{
+width: 500px;
+height: 300px;
+background-color: yellow;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+}
+
+#circulo{
+width: 80px;
+height: 60px;
+background-color: purple;
+border-radius: 50%;
+}
+
+#div1{
+width: 80px;
+height: 60px;
+background-color: red;
+}
+
+#div2{
+width: 50px;
+height: 40px;
+background-color: green;
+}
+
+#div3{
+width: 30px;
+height: 20px;
+background-color: blue;
+}
+
+.hidden{
+    display: none;
+}
+</style>
+</head>
+<body>
+<div id="cajaprincipal" ></div>
+<div id="circulo" class="hidden"></div>
+<div id="div1" class="hidden"></div>
+<div id="div2" class="hidden"></div>
+<div id="div3" class="hidden"></div>
+</body>
+</html>
