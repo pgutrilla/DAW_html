@@ -24,21 +24,32 @@
         <!-- DEFINA AQUÍ LA BARRA DE NAVEGACIÓN -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand text-primary" href="#">Examen 2ªEval. Parte 2 Bootstrap</a>
+              <div class="navbar-header ">
+                <a class="navbar-brand " href="#">Examen 2ªEval. Parte 2 Bootstrap</a>
                 <button type="button" class="navbar-toggle collapsed" 
-                  data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                  data-toggle="collapse" data-target="#burger" aria-expanded="false">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
               </div>
-              <div class="collapse navbar-collapse" id="menu">
+
+              <div class="collapse navbar-collapse" id="burger">
                 <ul class="nav navbar-nav">
-                  <li><a  class="text-primary" href="#">Opcion 1</a></li>
-                  <li><a  class="text-primary" href="#">Opcion 2</a></li>
-                  <li><a  class="text-primary" href="#">Opcion 3</a></li>
-                  <li><a  class="text-primary" href="#">Opcion 4</a></li>
+                  <li><a href="#">OPCIÓN 1</a></li>
+                  <li><a href="#">OPCIÓN 2</a></li>
+                  <li>
+                      <a class=" dropdown-toggle" href="#" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="true">
+                          OPCIÓN 3 <span class="caret"></span>
+                      </a>
+                        <ul class="dropdown-menu" aria-labelledby="desplegable">
+                            <li><a href="#">OPCIÓN 3.1</a></li>
+                            <li><a href="#">OPCIÓN 3.2</a></li>
+                            <li><a href="#">OPCIÓN 3.3</a></li>
+                        </ul>  
+                  </li>
+                  <li><a href="#">OPCIÓN 4</a></li>
                 </ul>
               </div>
             </div>
